@@ -1,2 +1,2 @@
 # 102
-A modern JS library based on 101
+A modern functional JS library based on 101
