@@ -1,18 +1,23 @@
+ /**
+  * @desc Performs right-to-left function composition. 
+  */
+
 /**
- * @module 102/map
+ * @module map
  */
 
 /**
  * @function module:102/map
  * @param {function} f
- * @param {Array} arg
+ * @param {Array} array
+ * @return {Array}
  */
 module.exports = map;
 const curry = require('./curry.js')
 
- 
+
 // This function is just applying map to a currying function
-function map(f, arg) {
-  return curry(arg.map(x => f(x)))
+function map(f, array) {
+  return curry(array.map(x => f(x)))
   } 
 

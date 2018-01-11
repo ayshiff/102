@@ -567,7 +567,7 @@
     "__docId__": 48,
     "kind": "file",
     "name": "src/compose.js",
-    "content": "/**\n * @module 102/compose\n */\n\n /**\n * @example \n * var f = function(x){ return x * x}\n * var g = function(x){ return x + 2}\n * let composed = compose(f,g)\n * \n */\n\n/**\n * @function module:102/compose\n * @param {function} f\n * @type {function}\n * @param {function} g\n * \n * @return {function}\n */\n\nmodule.exports = function compose(f,g) {\n  return function composed() { \n    var argument = Array.prototype.slice.call(arguments);\n\n    return f(g.apply(null, argument));\n  } \n}\n",
+    "content": "/**\n * Compose\n */\n\n\n/**\n * @desc Performs right-to-left function composition.\n * @function module:102/compose\n * @param {function} f\n * @type {function}\n * @param {function} g\n * \n * @return {function}\n * \n * @example \n * var f = function(x){ return x * x}\n * var g = function(x){ return x + 2}\n * let composed = compose(f,g)\n */\n\nmodule.exports = function compose(f,g) {\n  return function composed() { \n    var argument = Array.prototype.slice.call(arguments);\n\n    return f(g.apply(null, argument));\n  } \n}\n",
     "static": true,
     "longname": "/Users/ayshiff/Desktop/102/src/compose.js",
     "access": "public",
@@ -587,8 +587,11 @@
     "export": true,
     "importPath": "102/src/compose.js",
     "importStyle": "compose",
-    "description": "",
-    "lineNumber": 22,
+    "description": "Performs right-to-left function composition.",
+    "examples": [
+      "var f = function(x){ return x * x}\nvar g = function(x){ return x + 2}\nlet composed = compose(f,g)"
+    ],
+    "lineNumber": 21,
     "unknown": [
       {
         "tagName": "@function",
@@ -638,7 +641,7 @@
     "__docId__": 50,
     "kind": "file",
     "name": "src/curry.js",
-    "content": "/**\n * @module 102/curry\n */\n\n/**\n * @function module:102/curry\n * @param {function} f\n * @return {function}\n */\nmodule.exports = curry;\n \nfunction curry (arg){\n    // Convert the arguments object to real array by slicing it\n    var args = Array.prototype.slice.call(arguments, 1);\n\n    return function(){\n        return arg.apply(this, args.concat(\n            Array.prototype.slice.call(arguments, 0)\n        ))\n    }\n}\n\n\n",
+    "content": "/**\n * @module 102/curry\n */\n\n/**\n * @desc Returns a curried equivalent of the provided function.\n * @function module:102/curry\n * @param {function} f\n * @return {function}\n * \n * @example\n * var f = function(x) { return x}\n * var curried = curry(f)\n * \n */\nmodule.exports = curry;\n \nfunction curry (arg){\n    // Convert the arguments object to real array by slicing it\n    var args = Array.prototype.slice.call(arguments, 1);\n\n    return function(){\n        return arg.apply(this, args.concat(\n            Array.prototype.slice.call(arguments, 0)\n        ))\n    }\n}\n\n\n",
     "static": true,
     "longname": "/Users/ayshiff/Desktop/102/src/curry.js",
     "access": "public",
@@ -658,8 +661,11 @@
     "export": true,
     "importPath": "102/src/curry.js",
     "importStyle": "curry",
-    "description": "",
-    "lineNumber": 12,
+    "description": "Returns a curried equivalent of the provided function.",
+    "examples": [
+      "var f = function(x) { return x}\nvar curried = curry(f)"
+    ],
+    "lineNumber": 18,
     "unknown": [
       {
         "tagName": "@function",
@@ -691,7 +697,7 @@
     "__docId__": 52,
     "kind": "file",
     "name": "src/map.js",
-    "content": "/**\n * @module 102/map\n */\n\n/**\n * @function module:102/map\n * @param {function} f\n * @param {Array} arg\n */\nmodule.exports = map;\nconst curry = require('./curry.js')\n\n \n// This function is just applying map to a currying function\nfunction map(f, arg) {\n  return curry(arg.map(x => f(x)))\n  } \n\n",
+    "content": " /**\n  * @desc Performs right-to-left function composition. \n  */\n\n/**\n * @module map\n */\n\n/**\n * @function module:102/map\n * @param {function} f\n * @param {Array} array\n * @return {Array}\n */\nmodule.exports = map;\nconst curry = require('./curry.js')\n\n\n// This function is just applying map to a currying function\nfunction map(f, array) {\n  return curry(array.map(x => f(x)))\n  } \n\n",
     "static": true,
     "longname": "/Users/ayshiff/Desktop/102/src/map.js",
     "access": "public",
@@ -710,7 +716,7 @@
     "importPath": "102/src/map.js",
     "importStyle": null,
     "description": null,
-    "lineNumber": 11,
+    "lineNumber": 16,
     "undocument": true,
     "type": {
       "types": [
@@ -733,7 +739,7 @@
     "importPath": "102/src/map.js",
     "importStyle": "map",
     "description": "",
-    "lineNumber": 15,
+    "lineNumber": 20,
     "unknown": [
       {
         "tagName": "@function",
@@ -758,14 +764,17 @@
         ],
         "spread": false,
         "optional": false,
-        "name": "arg",
+        "name": "array",
         "description": ""
       }
     ],
     "return": {
+      "nullable": null,
       "types": [
-        "*"
-      ]
+        "Array"
+      ],
+      "spread": false,
+      "description": ""
     }
   },
   {

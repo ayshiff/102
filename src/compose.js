@@ -1,22 +1,21 @@
 /**
- * @module 102/compose
+ * Compose
  */
 
- /**
- * @example 
- * var f = function(x){ return x * x}
- * var g = function(x){ return x + 2}
- * let composed = compose(f,g)
- * 
- */
 
 /**
+ * @desc Performs right-to-left function composition.
  * @function module:102/compose
  * @param {function} f
  * @type {function}
  * @param {function} g
  * 
  * @return {function}
+ * 
+ * @example 
+ * var f = function(x){ return x * x}
+ * var g = function(x){ return x + 2}
+ * let composed = compose(f,g)
  */
 
 module.exports = function compose(f,g) {

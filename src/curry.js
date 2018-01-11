@@ -3,9 +3,15 @@
  */
 
 /**
+ * @desc Returns a curried equivalent of the provided function.
  * @function module:102/curry
  * @param {function} f
  * @return {function}
+ * 
+ * @example
+ * var f = function(x) { return x}
+ * var curried = curry(f)
+ * 
  */
 module.exports = curry;
  

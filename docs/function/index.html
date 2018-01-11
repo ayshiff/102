@@ -61,7 +61,8 @@
       <div>
         
         
-        
+        <div data-ice="description"><p>Performs right-to-left function composition.</p>
+</div>
       </div>
     </td>
     <td>
@@ -89,7 +90,8 @@
       <div>
         
         
-        
+        <div data-ice="description"><p>Returns a curried equivalent of the provided function.</p>
+</div>
       </div>
     </td>
     <td>
@@ -111,7 +113,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-map">map</a></span></span><span class="code" data-ice="signature">(f: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span>, arg: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span>): <span>*</span></span>
+          <span class="code" data-ice="name"><span><a href="function/index.html#static-function-map">map</a></span></span><span class="code" data-ice="signature">(f: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span>, array: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span></span>
         </p>
       </div>
       <div>
@@ -142,14 +144,15 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/compose.js.html#lineNumber22">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/compose.js.html#lineNumber21">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import compose from &apos;<span><a href="file/src/compose.js.html#lineNumber22">102/src/compose.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import compose from &apos;<span><a href="file/src/compose.js.html#lineNumber21">102/src/compose.js</a></span>&apos;</code></pre></div>
   
   
-  
+  <div data-ice="description"><p>Performs right-to-left function composition.</p>
+</div>
 
   
 
@@ -200,7 +203,16 @@
 
   
 
-  
+  <div data-ice="example">
+    <h4>Example:</h4>
+    
+  <div class="example-doc" data-ice="exampleDoc">
+      
+      <pre class="prettyprint source-code"><code data-ice="exampleCode">var f = function(x){ return x * x}
+var g = function(x){ return x + 2}
+let composed = compose(f,g)</code></pre>
+    </div>
+</div>
 
   
 
@@ -219,14 +231,15 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/curry.js.html#lineNumber12">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/curry.js.html#lineNumber18">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import curry from &apos;<span><a href="file/src/curry.js.html#lineNumber12">102/src/curry.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import curry from &apos;<span><a href="file/src/curry.js.html#lineNumber18">102/src/curry.js</a></span>&apos;</code></pre></div>
   
   
-  
+  <div data-ice="description"><p>Returns a curried equivalent of the provided function.</p>
+</div>
 
   
 
@@ -271,7 +284,15 @@
 
   
 
-  
+  <div data-ice="example">
+    <h4>Example:</h4>
+    
+  <div class="example-doc" data-ice="exampleDoc">
+      
+      <pre class="prettyprint source-code"><code data-ice="exampleCode">var f = function(x) { return x}
+var curried = curry(f)</code></pre>
+    </div>
+</div>
 
   
 
@@ -286,15 +307,15 @@
     
     
     
-    <span class="code" data-ice="name">map</span><span class="code" data-ice="signature">(f: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span>, arg: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span>): <span>*</span></span>
+    <span class="code" data-ice="name">map</span><span class="code" data-ice="signature">(f: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span>, array: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/map.js.html#lineNumber15">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/map.js.html#lineNumber20">source</a></span></span>
     </span>
   </h3>
 
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import map from &apos;<span><a href="file/src/map.js.html#lineNumber15">102/src/map.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import map from &apos;<span><a href="file/src/map.js.html#lineNumber20">102/src/map.js</a></span>&apos;</code></pre></div>
   
   
   
@@ -316,7 +337,7 @@
       <td data-ice="description"></td>
     </tr>
 <tr data-ice="property" data-depth="0">
-      <td data-ice="name" class="code" data-depth="0">arg</td>
+      <td data-ice="name" class="code" data-depth="0">array</td>
       <td data-ice="type" class="code"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
@@ -331,7 +352,7 @@
     <table>
       <tbody>
         <tr>
-          <td class="return-type code" data-ice="returnType"><span>*</span></td>
+          <td class="return-type code" data-ice="returnType"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></span></td>
           
         </tr>
       </tbody>

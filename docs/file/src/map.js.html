@@ -37,22 +37,27 @@
 </nav>
 
 <div class="content" data-ice="content"><h1 data-ice="title">src/map.js</h1>
-<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/**
- * @module 102/map
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content"> /**
+  * @desc Performs right-to-left function composition. 
+  */
+
+/**
+ * @module map
  */
 
 /**
  * @function module:102/map
  * @param {function} f
- * @param {Array} arg
+ * @param {Array} array
+ * @return {Array}
  */
 module.exports = map;
 const curry = require(&apos;./curry.js&apos;)
 
- 
+
 // This function is just applying map to a currying function
-function map(f, arg) {
-  return curry(arg.map(x =&gt; f(x)))
+function map(f, array) {
+  return curry(array.map(x =&gt; f(x)))
   } 
 
 </code></pre>

@@ -9,30 +9,54 @@
       },
       {
         "lineNumber": 5,
-        "line": " * @function module:102/curry"
+        "line": " * @desc Returns a curried equivalent of the provided function."
       },
       {
         "lineNumber": 6,
-        "line": " * @param {function} f"
+        "line": " * @function module:102/curry"
       },
       {
         "lineNumber": 7,
-        "line": " * @return {function}"
+        "line": " * @param {function} f"
       },
       {
         "lineNumber": 8,
-        "line": " */"
+        "line": " * @return {function}"
       },
       {
         "lineNumber": 9,
-        "line": "module.exports = curry;"
+        "line": " * "
       },
       {
         "lineNumber": 10,
-        "line": " "
+        "line": " * @example"
       },
       {
         "lineNumber": 11,
+        "line": " * var f = function(x) { return x}"
+      },
+      {
+        "lineNumber": 12,
+        "line": " * var curried = curry(f)"
+      },
+      {
+        "lineNumber": 13,
+        "line": " * "
+      },
+      {
+        "lineNumber": 14,
+        "line": " */"
+      },
+      {
+        "lineNumber": 15,
+        "line": "module.exports = curry;"
+      },
+      {
+        "lineNumber": 16,
+        "line": " "
+      },
+      {
+        "lineNumber": 17,
         "line": "function curry (arg){"
       }
     ],
