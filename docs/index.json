@@ -567,7 +567,7 @@
     "__docId__": 48,
     "kind": "file",
     "name": "src/compose.js",
-    "content": "\n/**\n * [compose]\n * @function module:102/compose\n * @param {function} f\n * @param {function} g\n */\n\n /**\n * this is compose\n */\n \nmodule.exports = function compose(f,g) {\n  return function composed() { \n    var argument = Array.prototype.slice.call(arguments);\n\n    return f(g.apply(null, argument));\n  } \n}\n",
+    "content": "/**\n * @module 102/compose\n */\n\n/**\n * [compose]\n * @function module:102/compose\n * @param {function} f\n * @param {function} g\n */\n \nmodule.exports = function compose(f,g) {\n  return function composed() { \n    var argument = Array.prototype.slice.call(arguments);\n\n    return f(g.apply(null, argument));\n  } \n}\n",
     "static": true,
     "longname": "/Users/ayshiff/Desktop/102/src/compose.js",
     "access": "public",
@@ -587,20 +587,34 @@
     "export": true,
     "importPath": "102/src/compose.js",
     "importStyle": "compose",
-    "description": "this is compose",
-    "lineNumber": 13,
+    "description": "[compose]",
+    "lineNumber": 12,
+    "unknown": [
+      {
+        "tagName": "@function",
+        "tagValue": "module:102/compose"
+      }
+    ],
     "params": [
       {
-        "name": "f",
+        "nullable": null,
         "types": [
-          "*"
-        ]
+          "function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "f",
+        "description": ""
       },
       {
-        "name": "g",
+        "nullable": null,
         "types": [
-          "*"
-        ]
+          "function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "g",
+        "description": ""
       }
     ],
     "return": {

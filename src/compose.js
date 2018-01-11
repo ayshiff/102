@@ -1,13 +1,12 @@
+/**
+ * @module 102/compose
+ */
 
 /**
  * [compose]
  * @function module:102/compose
  * @param {function} f
  * @param {function} g
- */
-
- /**
- * this is compose
  */
  
 module.exports = function compose(f,g) {
