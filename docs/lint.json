@@ -9,15 +9,15 @@
       },
       {
         "lineNumber": 5,
-        "line": " * [compose]"
-      },
-      {
-        "lineNumber": 6,
         "line": " * @function module:102/curry"
       },
       {
-        "lineNumber": 7,
+        "lineNumber": 6,
         "line": " * @param {function} f"
+      },
+      {
+        "lineNumber": 7,
+        "line": " * @return {function}"
       },
       {
         "lineNumber": 8,

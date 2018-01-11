@@ -3,9 +3,9 @@
  */
 
 /**
- * [compose]
  * @function module:102/curry
  * @param {function} f
+ * @return {function}
  */
 module.exports = curry;
  
