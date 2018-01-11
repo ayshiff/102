@@ -1,0 +1,24 @@
+{
+  "coverage": "75%",
+  "expectCount": 4,
+  "actualCount": 3,
+  "files": {
+    "src/compose.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/curry.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/map.js": {
+      "expectCount": 2,
+      "actualCount": 1,
+      "undocumentLines": [
+        12
+      ]
+    }
+  }
+}

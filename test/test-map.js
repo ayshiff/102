@@ -1,6 +1,6 @@
 'use strict';
 var expect = require('chai').expect
-var map = require('../map.js')
+var map = require('../src/map.js')
 
 describe('map function test', () => {
 

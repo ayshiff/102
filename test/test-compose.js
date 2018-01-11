@@ -1,6 +1,6 @@
 'use strict';
 var expect = require('chai').expect
-var compose = require('../compose.js')
+var compose = require('../src/compose.js')
 
 describe('compose function test', () => {
 

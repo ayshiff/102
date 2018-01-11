@@ -1,0 +1,108 @@
+[
+  {
+    "name": "curry",
+    "filePath": "src/curry.js",
+    "lines": [
+      {
+        "lineNumber": 4,
+        "line": "/**"
+      },
+      {
+        "lineNumber": 5,
+        "line": " * [compose]"
+      },
+      {
+        "lineNumber": 6,
+        "line": " * @function module:102/curry"
+      },
+      {
+        "lineNumber": 7,
+        "line": " * @param {function} f"
+      },
+      {
+        "lineNumber": 8,
+        "line": " */"
+      },
+      {
+        "lineNumber": 9,
+        "line": "module.exports = curry;"
+      },
+      {
+        "lineNumber": 10,
+        "line": " "
+      },
+      {
+        "lineNumber": 11,
+        "line": "function curry (arg){"
+      }
+    ],
+    "codeParams": [
+      "arg"
+    ],
+    "docParams": [
+      "f"
+    ]
+  },
+  {
+    "name": "map",
+    "filePath": "src/map.js",
+    "lines": [
+      {
+        "lineNumber": 4,
+        "line": "/**"
+      },
+      {
+        "lineNumber": 5,
+        "line": " * [compose]"
+      },
+      {
+        "lineNumber": 6,
+        "line": " * @function module:102/map"
+      },
+      {
+        "lineNumber": 7,
+        "line": " * @param {function} f"
+      },
+      {
+        "lineNumber": 8,
+        "line": " * @param {function} g"
+      },
+      {
+        "lineNumber": 9,
+        "line": " */"
+      },
+      {
+        "lineNumber": 10,
+        "line": "module.exports = map;"
+      },
+      {
+        "lineNumber": 11,
+        "line": "const curry = require('./curry.js')"
+      },
+      {
+        "lineNumber": 12,
+        "line": ""
+      },
+      {
+        "lineNumber": 13,
+        "line": " "
+      },
+      {
+        "lineNumber": 14,
+        "line": "// This function is just applying map to a currying function"
+      },
+      {
+        "lineNumber": 15,
+        "line": "function map(f, arg) {"
+      }
+    ],
+    "codeParams": [
+      "f",
+      "arg"
+    ],
+    "docParams": [
+      "f",
+      "g"
+    ]
+  }
+]

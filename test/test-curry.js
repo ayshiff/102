@@ -1,6 +1,6 @@
 'use strict';
 var expect = require('chai').expect
-var curry = require('../curry.js')
+var curry = require('../src/curry.js')
 
 describe('curry function test', () => {
 
