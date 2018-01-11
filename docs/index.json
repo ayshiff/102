@@ -567,7 +567,7 @@
     "__docId__": 48,
     "kind": "file",
     "name": "src/compose.js",
-    "content": "/**\n * @module 102/compose\n */\n\n/**\n * [compose]\n * @function module:102/compose\n * @param {function} f\n * @param {function} g\n */\n \nmodule.exports = function compose(f,g) {\n  return function composed() { \n    var argument = Array.prototype.slice.call(arguments);\n\n    return f(g.apply(null, argument));\n  } \n}\n",
+    "content": "/**\n * @module 102/compose\n */\n\n/**\n * @function module:102/compose\n * @param {function} f\n * @param {function} g\n */\n \nmodule.exports = function compose(f,g) {\n  return function composed() { \n    var argument = Array.prototype.slice.call(arguments);\n\n    return f(g.apply(null, argument));\n  } \n}\n",
     "static": true,
     "longname": "/Users/ayshiff/Desktop/102/src/compose.js",
     "access": "public",
@@ -587,8 +587,8 @@
     "export": true,
     "importPath": "102/src/compose.js",
     "importStyle": "compose",
-    "description": "[compose]",
-    "lineNumber": 12,
+    "description": "",
+    "lineNumber": 11,
     "unknown": [
       {
         "tagName": "@function",
@@ -677,7 +677,7 @@
     "__docId__": 52,
     "kind": "file",
     "name": "src/map.js",
-    "content": "/**\n * @module 102/map\n */\n\n/**\n * [compose]\n * @function module:102/map\n * @param {function} f\n * @param {function} g\n */\nmodule.exports = map;\nconst curry = require('./curry.js')\n\n \n// This function is just applying map to a currying function\nfunction map(f, arg) {\n  return curry(arg.map(x => f(x)))\n  } \n\n",
+    "content": "/**\n * @module 102/map\n */\n\n/**\n * @function module:102/map\n * @param {function} f\n * @param {function} g\n */\nmodule.exports = map;\nconst curry = require('./curry.js')\n\n \n// This function is just applying map to a currying function\nfunction map(f, arg) {\n  return curry(arg.map(x => f(x)))\n  } \n\n",
     "static": true,
     "longname": "/Users/ayshiff/Desktop/102/src/map.js",
     "access": "public",
@@ -696,7 +696,7 @@
     "importPath": "102/src/map.js",
     "importStyle": null,
     "description": null,
-    "lineNumber": 12,
+    "lineNumber": 11,
     "undocument": true,
     "type": {
       "types": [
@@ -718,8 +718,8 @@
     "export": true,
     "importPath": "102/src/map.js",
     "importStyle": "map",
-    "description": "[compose]",
-    "lineNumber": 16,
+    "description": "",
+    "lineNumber": 15,
     "unknown": [
       {
         "tagName": "@function",

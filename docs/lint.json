@@ -53,46 +53,42 @@
       },
       {
         "lineNumber": 5,
-        "line": " * [compose]"
-      },
-      {
-        "lineNumber": 6,
         "line": " * @function module:102/map"
       },
       {
-        "lineNumber": 7,
+        "lineNumber": 6,
         "line": " * @param {function} f"
       },
       {
-        "lineNumber": 8,
+        "lineNumber": 7,
         "line": " * @param {function} g"
       },
       {
-        "lineNumber": 9,
+        "lineNumber": 8,
         "line": " */"
       },
       {
-        "lineNumber": 10,
+        "lineNumber": 9,
         "line": "module.exports = map;"
       },
       {
-        "lineNumber": 11,
+        "lineNumber": 10,
         "line": "const curry = require('./curry.js')"
       },
       {
-        "lineNumber": 12,
+        "lineNumber": 11,
         "line": ""
       },
       {
-        "lineNumber": 13,
+        "lineNumber": 12,
         "line": " "
       },
       {
-        "lineNumber": 14,
+        "lineNumber": 13,
         "line": "// This function is just applying map to a currying function"
       },
       {
-        "lineNumber": 15,
+        "lineNumber": 14,
         "line": "function map(f, arg) {"
       }
     ],

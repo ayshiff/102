@@ -3,7 +3,6 @@
  */
 
 /**
- * [compose]
  * @function module:102/map
  * @param {function} f
  * @param {function} g
