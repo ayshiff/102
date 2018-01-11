@@ -5,7 +5,7 @@
 /**
  * @function module:102/map
  * @param {function} f
- * @param {function} g
+ * @param {Array} arg
  */
 module.exports = map;
 const curry = require('./curry.js')

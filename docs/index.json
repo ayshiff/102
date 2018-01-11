@@ -677,7 +677,7 @@
     "__docId__": 52,
     "kind": "file",
     "name": "src/map.js",
-    "content": "/**\n * @module 102/map\n */\n\n/**\n * @function module:102/map\n * @param {function} f\n * @param {function} g\n */\nmodule.exports = map;\nconst curry = require('./curry.js')\n\n \n// This function is just applying map to a currying function\nfunction map(f, arg) {\n  return curry(arg.map(x => f(x)))\n  } \n\n",
+    "content": "/**\n * @module 102/map\n */\n\n/**\n * @function module:102/map\n * @param {function} f\n * @param {Array} arg\n */\nmodule.exports = map;\nconst curry = require('./curry.js')\n\n \n// This function is just applying map to a currying function\nfunction map(f, arg) {\n  return curry(arg.map(x => f(x)))\n  } \n\n",
     "static": true,
     "longname": "/Users/ayshiff/Desktop/102/src/map.js",
     "access": "public",
@@ -740,11 +740,11 @@
       {
         "nullable": null,
         "types": [
-          "function"
+          "Array"
         ],
         "spread": false,
         "optional": false,
-        "name": "g",
+        "name": "arg",
         "description": ""
       }
     ],
