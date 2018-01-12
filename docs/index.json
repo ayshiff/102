@@ -696,6 +696,118 @@
   {
     "__docId__": 52,
     "kind": "file",
+    "name": "src/isInteger.js",
+    "content": "/**\n * @module 102/isInteger\n */\n\n/**\n * @desc Returns a curried equivalent of the provided function.\n * @function module:102/isInteger\n * @param {any} val\n * @return {boolean}\n * \n * @example\n * var val = 15;\n * isInteger(val)\n * \n */\nmodule.exports = isInteger;\n\nfunction isInteger(val){\n    return typeof val == 'number' && isFinite(val) && val % 1 === 0? true: false;\n}\n\n \n\n\n",
+    "static": true,
+    "longname": "/Users/ayshiff/Desktop/102/src/isInteger.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 53,
+    "kind": "function",
+    "name": "isInteger",
+    "memberof": "src/isInteger.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/isInteger.js~isInteger",
+    "access": "public",
+    "export": true,
+    "importPath": "102/src/isInteger.js",
+    "importStyle": "isInteger",
+    "description": "Returns a curried equivalent of the provided function.",
+    "examples": [
+      "var val = 15;\nisInteger(val)"
+    ],
+    "lineNumber": 18,
+    "unknown": [
+      {
+        "tagName": "@function",
+        "tagValue": "module:102/isInteger"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "any"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "val",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "boolean"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 54,
+    "kind": "file",
+    "name": "src/isNumber.js",
+    "content": "/**\n * @module 102/isNumber\n */\n\n/**\n * @desc Returns a curried equivalent of the provided function.\n * @function module:102/isNumber\n * @param {any} val\n * @return {boolean}\n * \n * @example\n * var val = 15.3;\n * isNumber(val)\n * \n */\nmodule.exports = isNumber;\n\nfunction isNumber(val){\n    return typeof(val) === 'number' && isFinite(val)? true: false;\n}\n\n \n\n\n",
+    "static": true,
+    "longname": "/Users/ayshiff/Desktop/102/src/isNumber.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 55,
+    "kind": "function",
+    "name": "isNumber",
+    "memberof": "src/isNumber.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/isNumber.js~isNumber",
+    "access": "public",
+    "export": true,
+    "importPath": "102/src/isNumber.js",
+    "importStyle": "isNumber",
+    "description": "Returns a curried equivalent of the provided function.",
+    "examples": [
+      "var val = 15.3;\nisNumber(val)"
+    ],
+    "lineNumber": 18,
+    "unknown": [
+      {
+        "tagName": "@function",
+        "tagValue": "module:102/isNumber"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "any"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "val",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "boolean"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 56,
+    "kind": "file",
     "name": "src/map.js",
     "content": " /**\n  * @desc Performs right-to-left function composition. \n  */\n\n/**\n * @module map\n */\n\n/**\n * @function module:102/map\n * @param {function} f\n * @param {Array} array\n * @return {Array}\n */\nmodule.exports = map;\nconst curry = require('./curry.js')\n\n\n// This function is just applying map to a currying function\nfunction map(f, array) {\n  return curry(array.map(x => f(x)))\n  } \n\n",
     "static": true,
@@ -705,7 +817,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 53,
+    "__docId__": 57,
     "kind": "variable",
     "name": "curry",
     "memberof": "src/map.js",
@@ -726,7 +838,7 @@
     "ignore": true
   },
   {
-    "__docId__": 54,
+    "__docId__": 58,
     "kind": "function",
     "name": "map",
     "memberof": "src/map.js",

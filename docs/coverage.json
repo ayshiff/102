@@ -1,7 +1,7 @@
 {
-  "coverage": "75%",
-  "expectCount": 4,
-  "actualCount": 3,
+  "coverage": "83.33%",
+  "expectCount": 6,
+  "actualCount": 5,
   "files": {
     "src/compose.js": {
       "expectCount": 1,
@@ -9,6 +9,16 @@
       "undocumentLines": []
     },
     "src/curry.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/isInteger.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/isNumber.js": {
       "expectCount": 1,
       "actualCount": 1,
       "undocumentLines": []

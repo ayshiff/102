@@ -12,6 +12,18 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
+    "102/src/isinteger.js~isinteger",
+    "function/index.html#static-function-isInteger",
+    "<span>isInteger</span> <span class=\"search-result-import-path\">102/src/isInteger.js</span>",
+    "function"
+  ],
+  [
+    "102/src/isnumber.js~isnumber",
+    "function/index.html#static-function-isNumber",
+    "<span>isNumber</span> <span class=\"search-result-import-path\">102/src/isNumber.js</span>",
+    "function"
+  ],
+  [
     "102/src/map.js~map",
     "function/index.html#static-function-map",
     "<span>map</span> <span class=\"search-result-import-path\">102/src/map.js</span>",
@@ -309,6 +321,18 @@ window.esdocSearchIndex = [
     "src/curry.js",
     "file/src/curry.js.html",
     "src/curry.js",
+    "file"
+  ],
+  [
+    "src/isinteger.js",
+    "file/src/isInteger.js.html",
+    "src/isInteger.js",
+    "file"
+  ],
+  [
+    "src/isnumber.js",
+    "file/src/isNumber.js.html",
+    "src/isNumber.js",
     "file"
   ],
   [
