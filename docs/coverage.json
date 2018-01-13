@@ -1,7 +1,7 @@
 {
-  "coverage": "83.33%",
-  "expectCount": 6,
-  "actualCount": 5,
+  "coverage": "63.63%",
+  "expectCount": 11,
+  "actualCount": 7,
   "files": {
     "src/compose.js": {
       "expectCount": 1,
@@ -28,6 +28,21 @@
       "actualCount": 1,
       "undocumentLines": [
         16
+      ]
+    },
+    "src/mapFunctor.js": {
+      "expectCount": 3,
+      "actualCount": 1,
+      "undocumentLines": [
+        13,
+        17
+      ]
+    },
+    "src/newContainer.js": {
+      "expectCount": 2,
+      "actualCount": 1,
+      "undocumentLines": [
+        20
       ]
     }
   }

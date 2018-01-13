@@ -890,6 +890,194 @@
     }
   },
   {
+    "__docId__": 59,
+    "kind": "file",
+    "name": "src/mapFunctor.js",
+    "content": "/**\n * @module 102/mapFunctor\n */\n\n/**\n * @desc Returns a new Container\n * @function module:102/mapFunctor\n * @param {Function} f\n * @return {Container}\n * \n */\nvar newContainer = require('./newContainer.js')\nvar Container =  function (x){\n    this._value = x\n}\n\nmodule.exports = Container.prototype.mapFunctor = function (f){\n    return newContainer(f(this._value))\n}\n\n",
+    "static": true,
+    "longname": "/Users/ayshiff/Desktop/102/src/mapFunctor.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 60,
+    "kind": "variable",
+    "name": "newContainer",
+    "memberof": "src/mapFunctor.js",
+    "static": true,
+    "longname": "src/mapFunctor.js~newContainer",
+    "access": "public",
+    "export": false,
+    "importPath": "102/src/mapFunctor.js",
+    "importStyle": null,
+    "description": "Returns a new Container",
+    "lineNumber": 12,
+    "unknown": [
+      {
+        "tagName": "@function",
+        "tagValue": "module:102/mapFunctor"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "f",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Container"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 61,
+    "kind": "function",
+    "name": "Container",
+    "memberof": "src/mapFunctor.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/mapFunctor.js~Container",
+    "access": "public",
+    "export": false,
+    "importPath": "102/src/mapFunctor.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 13,
+    "undocument": true,
+    "params": [
+      {
+        "name": "x",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null,
+    "ignore": true
+  },
+  {
+    "__docId__": 62,
+    "kind": "function",
+    "name": "mapFunctor",
+    "memberof": "src/mapFunctor.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/mapFunctor.js~mapFunctor",
+    "access": "public",
+    "export": true,
+    "importPath": "102/src/mapFunctor.js",
+    "importStyle": "mapFunctor",
+    "description": null,
+    "lineNumber": 17,
+    "undocument": true,
+    "params": [
+      {
+        "name": "f",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 63,
+    "kind": "file",
+    "name": "src/newContainer.js",
+    "content": "/**\n * @module 102/newContainer\n */\n\n/**\n * @desc Returns a new Container\n * @function module:102/newContainer\n * @param {any} arg\n * @return {Container}\n * \n */\nmodule.exports = newContainer;\n\nfunction newContainer(arg){\n   var Container =  function (x){\n        this._value = x\n    }\n    return new Container(arg)\n}\nvar result = newContainer(undefined)\nconsole.log(result)\n\n",
+    "static": true,
+    "longname": "/Users/ayshiff/Desktop/102/src/newContainer.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 64,
+    "kind": "variable",
+    "name": "result",
+    "memberof": "src/newContainer.js",
+    "static": true,
+    "longname": "src/newContainer.js~result",
+    "access": "public",
+    "export": false,
+    "importPath": "102/src/newContainer.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 20,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 65,
+    "kind": "function",
+    "name": "newContainer",
+    "memberof": "src/newContainer.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/newContainer.js~newContainer",
+    "access": "public",
+    "export": true,
+    "importPath": "102/src/newContainer.js",
+    "importStyle": "newContainer",
+    "description": "Returns a new Container",
+    "lineNumber": 14,
+    "unknown": [
+      {
+        "tagName": "@function",
+        "tagValue": "module:102/newContainer"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "any"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "arg",
+        "description": ""
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Container"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
     "kind": "index",
     "content": "# 102\nA modern functional JS library based on 101\n",
     "longname": "/Users/ayshiff/Desktop/102/README.md",

@@ -30,6 +30,18 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
+    "102/src/mapfunctor.js~mapfunctor",
+    "function/index.html#static-function-mapFunctor",
+    "<span>mapFunctor</span> <span class=\"search-result-import-path\">102/src/mapFunctor.js</span>",
+    "function"
+  ],
+  [
+    "102/src/newcontainer.js~newcontainer",
+    "function/index.html#static-function-newContainer",
+    "<span>newContainer</span> <span class=\"search-result-import-path\">102/src/newContainer.js</span>",
+    "function"
+  ],
+  [
     "src/.external-ecmascript.js~array",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
     "src/.external-ecmascript.js~Array",
@@ -339,6 +351,18 @@ window.esdocSearchIndex = [
     "src/map.js",
     "file/src/map.js.html",
     "src/map.js",
+    "file"
+  ],
+  [
+    "src/mapfunctor.js",
+    "file/src/mapFunctor.js.html",
+    "src/mapFunctor.js",
+    "file"
+  ],
+  [
+    "src/newcontainer.js",
+    "file/src/newContainer.js.html",
+    "src/newContainer.js",
     "file"
   ]
 ]

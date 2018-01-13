@@ -10,4 +10,18 @@ describe('isInteger function test', () => {
         var result = isInteger(valeur)
         expect(result).to.equal(supposedResult)
     })
+
+    it('isInteger(null) should return false ', () => {
+        var valeur = null;
+        var supposedResult = false;
+        var result = isInteger(valeur)
+        expect(result).to.equal(supposedResult)
+    })
+
+    it('isInteger(undefined) should return false ', () => {
+        var valeur = undefined;
+        var supposedResult = false;
+        var result = isInteger(valeur)
+        expect(result).to.equal(supposedResult)
+    })
 })

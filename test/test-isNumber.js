@@ -18,7 +18,7 @@ describe('isNumber function test', () => {
         expect(result).to.equal(supposedResult)
     })
 
-    it('isNumber(null) should return false ', () => {
+    it('isNumber(undefined) should return false ', () => {
         var valeur = undefined;
         var supposedResult = false;
         var result = isNumber(valeur)
