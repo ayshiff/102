@@ -11,13 +11,13 @@ describe('multiply function test', () => {
         var supposedResult = a * b;
         expect(supposedResult).to.deep.equal(result)
     })
-    /*
-    it('should return an equivalent to `a * b` but curried ', () => {
+    
+    it('should return 3 * 2 from a curried function  ', () => {
         var double = multiply(2)
         var triple = multiply(3)
         var result = double(3);
         var supposedResult = 6;
         expect(supposedResult).to.deep.equal(result)
     })
-    */
+    
 })

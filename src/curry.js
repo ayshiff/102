@@ -35,7 +35,7 @@ function curry(f, n) {
   
   function _curry(f, n, args) {
   
-    return function(/* args */) {
+    return function() {
       var curryArgs = args.concat(sliceFunction.call(arguments));
   
       if (curryArgs.length >= n) {

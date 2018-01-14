@@ -12,7 +12,7 @@ describe('curry function test', () => {
         var expected = curr(arg)
         expect(expected).to.equal(expectedResult)
     })
-// Probleme here
+// Probleme resolved
     
     it('2 curry (f(x, y)) should return f(x)(y)', () => {
         var arg1 = Math.random()
