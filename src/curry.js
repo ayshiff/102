@@ -14,7 +14,7 @@
  * 
  */
 module.exports = curry;
- 
+ /*
 function curry (arg){
     // Convert the arguments object to real array by slicing it
     var args = Array.prototype.slice.call(arguments, 1);
@@ -25,5 +25,25 @@ function curry (arg){
         ))
     }
 }
+*/
+var sliceFunction = Array.prototype.slice;
+
+function curry(f, n) {
+    var length = n || f.length;
+    return _curry(f, length, []);
+  }
+  
+  function _curry(f, n, args) {
+  
+    return function(/* args */) {
+      var curryArgs = args.concat(sliceFunction.call(arguments));
+  
+      if (curryArgs.length >= n) {
+        return f.apply(null, curryArgs.slice(0, n));
+      } else {
+        return _curry(f, n, curryArgs);
+      }
+    };
+  }
 
 
