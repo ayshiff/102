@@ -10,8 +10,8 @@
  * 
  */
 var newContainer = require('./newContainer.js')
-
+/*
 module.exports = Container.prototype.mapFunctor = function (f){
     return newContainer(f(this._value))
 }
-
+*/
