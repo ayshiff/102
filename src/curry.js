@@ -6,13 +6,15 @@
  * @desc Returns a curried equivalent of the provided function.
  * @function module:102/curry
  * @param {function} f
+ * 
  * @return {function}
  * 
  * @example
- * var f = function(x) { return x}
+ * var multiplyFunction = function(x,y) { return x * y }
  * var curried = curry(f)
- * 
+ * curried(2)(3)
  */
+
 module.exports = curry;
  /*
 function curry (arg){
