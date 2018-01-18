@@ -4,7 +4,7 @@
 
 /**
  * @desc Returns a curried equivalent of the provided function.
- * @function module:102/curry
+ * @function curry
  * @param {function} f
  * 
  * @return {function}

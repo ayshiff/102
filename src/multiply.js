@@ -11,4 +11,4 @@
  */
 var curry = require('./curry.js')
 
-module.exports =  multiply = curry(function multiply(a, b) { return a * b; });
+module.exports = multiply = curry(function multiply(a, b) { return a * b; });
