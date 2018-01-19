@@ -7,7 +7,7 @@
  */
 
 /**
- * @function module:102/map
+ * @function map
  * @param {function} f
  * @param {Array} array
  * @return {Array}

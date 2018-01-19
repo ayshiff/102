@@ -1,12 +1,11 @@
 /**
- * @module 102/curry
+ * @module curry
  */
 
 /**
  * @desc Returns a curried equivalent of the provided function.
  * @function curry
  * @param {function} f
- * 
  * @return {function}
  * 
  * @example

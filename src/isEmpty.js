@@ -1,10 +1,10 @@
 /**
- * @module 102/isEmpty
+ * @module isEmpty
  */
 
 /**
  * @desc Returns true if the parameter is empty.
- * @function module:102/isEmpty
+ * @function isEmpty
  * @param {any} val
  * @return {boolean}
  * 

@@ -1,17 +1,17 @@
 /**
- * @module 102/isInteger
+ * @module isInteger
  */
 
 /**
  * @desc Returns a curried equivalent of the provided function.
- * @function module:102/isInteger
+ * @function isInteger
  * @param {any} val
  * @return {boolean}
  * 
  * @example
  * var val = 15;
  * isInteger(val)
- * 
+ * s
  */
 module.exports = isInteger;
 

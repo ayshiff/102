@@ -1,12 +1,13 @@
 /**
- * @module 102/multiply
+ * @module multiply
  */
 
 /**
  * @desc Returns a new Container
- * @function module:102/multiply
- * @param {Function} f
- * @return {Container}
+ * @function multiply
+ * @param {Number} a
+ * @param {Number} b
+ * @return {Number}
  * 
  */
 var curry = require('./curry.js')

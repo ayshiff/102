@@ -1,13 +1,13 @@
 /**
- * @module 102/apply
+ * @module apply
  */
 
 /**
  * @desc Apply a function to an argument list.
- * @function module:102/apply
- * @param {array} val
- * @return {boolean}
- * 
+ * @function apply
+ * @return {any}
+ * @param {function} fn
+ * @param {array} args
  * @example
  * let arr = [0, 1, 2, 3]
  * apply(Math.max, arr) // 3

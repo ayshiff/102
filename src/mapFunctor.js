@@ -1,17 +1,16 @@
 /**
- * @module 102/mapFunctor
+ * @module mapFunctor
  */
 
 /**
  * @desc Returns a new Container
- * @function module:102/mapFunctor
- * @param {Function} f
+ * @function mapFunctor
  * @return {Container}
  * 
  */
 var newContainer = require('./newContainer.js')
-/*
-module.exports = Container.prototype.mapFunctor = function (f){
+
+module.exports = mapFunctor = function (f){
     return newContainer(f(this._value))
 }
-*/
+

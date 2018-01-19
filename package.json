@@ -26,8 +26,6 @@
     "npm": "^5.6.0"
   },
   "dependencies": {
-    "esdoc": "^1.0.4",
-    "esdoc-node": "^1.0.2",
-    "esdoc-standard-plugin": "^1.0.0"
+    "jsdoc": "^3.5.5"
   }
 }

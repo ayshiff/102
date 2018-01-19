@@ -1,10 +1,10 @@
 /**
- * @module 102/newContainer
+ * @module newContainer
  */
 
 /**
  * @desc Returns a new Container
- * @function module:102/newContainer
+ * @function newContainer
  * @param {any} arg
  * @return {Container}
  * 

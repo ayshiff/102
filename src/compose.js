@@ -1,13 +1,12 @@
 /**
- * Compose
+ * @module compose
  */
 
 
 /**
  * @desc Performs right-to-left function composition.
- * @function module:102/compose
+ * @function compose
  * @param {function} f
- * @type {function}
  * @param {function} g
  * 
  * @return {function}

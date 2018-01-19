@@ -1,10 +1,10 @@
 /**
- * @module 102/isNumber
+ * @module isNumber
  */
 
 /**
  * @desc Returns a curried equivalent of the provided function.
- * @function module:102/isNumber
+ * @function isNumber
  * @param {any} val
  * @return {boolean}
  * 
