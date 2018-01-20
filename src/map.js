@@ -1,10 +1,10 @@
  /**
-  * @desc Performs right-to-left function composition. 
-  */
-
-/**
  * @module map
  */
+ 
+ /**
+  * @desc Performs right-to-left function composition. 
+  */
 
 /**
  * @function map

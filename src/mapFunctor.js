@@ -3,7 +3,7 @@
  */
 
 /**
- * @desc Returns a new Container
+ * @desc Returns a new Functor
  * @function mapFunctor
  * @return {Container}
  * 

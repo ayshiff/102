@@ -3,7 +3,7 @@
  */
 
 /**
- * @desc Returns a curried equivalent of the provided function.
+ * @desc Returns true if the argument is an Integer.
  * @function isInteger
  * @param {any} val
  * @return {boolean}
