@@ -1,6 +1,6 @@
 * * *
 
-## 102
+# 102
 
 A modern functionnal programming library based on 101.
 
@@ -27,9 +27,9 @@ Apply a function to an argument list.
 
 **Parameters**
 
-**fn**: `function`, Apply a function to an argument list.
+**fn**: `function`
 
-**args**: `array`, Apply a function to an argument list.
+**args**: `array`
 
 **Returns**: `any`
 
@@ -67,9 +67,9 @@ Performs right-to-left function composition.
 
 **Parameters**
 
-**f**: `function`, Performs right-to-left function composition.
+**f**: `function`
 
-**g**: `function`, Performs right-to-left function composition.
+**g**: `function`
 
 **Returns**: `function`
 
@@ -108,7 +108,7 @@ Returns a curried equivalent of the provided function.
 
 **Parameters**
 
-**f**: `function`, Returns a curried equivalent of the provided function.
+**f**: `function`
 
 **Returns**: `function`
 
@@ -147,7 +147,7 @@ Returns true if the parameter is empty.
 
 **Parameters**
 
-**val**: `any`, Returns true if the parameter is empty.
+**val**: `any`
 
 **Returns**: `boolean`
 
@@ -185,7 +185,7 @@ Returns true if the argument is an Integer.
 
 **Parameters**
 
-**val**: `any`, Returns true if the argument is an Integer.
+**val**: `any`
 
 **Returns**: `boolean`
 
@@ -223,7 +223,7 @@ Returns true if the argument is a Number.
 
 **Parameters**
 
-**val**: `any`, Returns true if the argument is a Number.
+**val**: `any`
 
 **Returns**: `boolean`
 
@@ -327,9 +327,9 @@ Returns the multiplication of two Numbers.
 
 **Parameters**
 
-**a**: `Number`, Returns the multiplication of two Numbers.
+**a**: `Number`
 
-**b**: `Number`, Returns the multiplication of two Numbers.
+**b**: `Number`
 
 **Returns**: `Number`
 
@@ -368,7 +368,7 @@ Returns a new Container
 
 **Parameters**
 
-**arg**: `any`, Returns a new Container
+**arg**: `any`
 
 **Returns**: `Container`
 
