@@ -8,6 +8,9 @@
  * @param {any} arg
  * @return {Container}
  * 
+ * @example
+ * var Container1 = newContainer(2) //Container { _value: 2 }
+ * 
  */
 module.exports = newContainer;
 

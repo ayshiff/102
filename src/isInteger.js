@@ -10,8 +10,7 @@
  * 
  * @example
  * var val = 15;
- * isInteger(val)
- * s
+ * isInteger(val) // true
  */
 module.exports = isInteger;
 

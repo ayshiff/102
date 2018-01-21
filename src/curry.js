@@ -11,7 +11,7 @@
  * @example
  * var multiplyFunction = function(x,y) { return x * y }
  * var curried = curry(f)
- * curried(2)(3)
+ * curried(2)(3) //6
  */
 
 module.exports = curry;

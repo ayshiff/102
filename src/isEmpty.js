@@ -10,7 +10,7 @@
  * 
  * @example
  * var val = '';
- * isEmpty(val)
+ * isEmpty(val) // true
  * 
  */
 module.exports = isEmpty;
