@@ -1,6 +1,5 @@
-* * *
-
 # 102
+[![Build Status](https://travis-ci.org/ayshiff/102.svg?branch=master)](https://travis-ci.org/ayshiff/102)
 
 A modern functionnal programming library based on 101.
 
