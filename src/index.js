@@ -1,0 +1,9 @@
+export { default as compose } from './compose';
+export { default as apply } from './apply';
+export { default as curry } from './curry';
+export { default as divide } from './divide';
+export { default as isEmpty } from './isEmpty';
+export { default as isInteger } from './isInteger';
+export { default as isNumber } from './isNumber';
+export { default as map } from './map';
+export { default as multiply } from './multiply';

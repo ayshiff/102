@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: isNumber.js</title>
+    <title>JSDoc: Source: divide.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: isNumber.js</h1>
+    <h1 class="page-title">Source: divide.js</h1>
 
     
 
@@ -27,30 +27,24 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>/**
- * @module isNumber
+ * @module divide
  */
 
 /**
- * @desc Returns true if the argument is a Number.
- * @function isNumber
- * @param {any} val
- * @return {boolean}
+ * @desc Returns the multiplication of two Numbers.
+ * @function divide
+ * @param {Number} a
+ * @param {Number} b
+ * @return {Number}
  * 
  * @example
- * var val = 15.3;
- * isNumber(val)
- * 
+ * var a = 6
+ * var b = 2
+ * var result = divide(a)(b) //3
  */
-module.exports = isNumber;
+var curry = require('./curry.js')
 
-function isNumber(val){
-    return typeof(val) === 'number' &amp;&amp; isFinite(val)? true: false;
-}
-
- 
-
-
-</code></pre>
+module.exports = divide = curry(function divide(a, b) { return a / b; });</code></pre>
         </article>
     </section>
 

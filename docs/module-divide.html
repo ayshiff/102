@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Module: isNumber</title>
+    <title>JSDoc: Module: divide</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Module: isNumber</h1>
+    <h1 class="page-title">Module: divide</h1>
 
     
 
@@ -64,7 +64,7 @@
     
 
     
-    <h4 class="name" id="~isNumber"><span class="type-signature">(inner) </span>isNumber<span class="signature">(val)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+    <h4 class="name" id="~divide"><span class="type-signature">(inner) </span>divide<span class="signature">(a, b)</span><span class="type-signature"> &rarr; {Number}</span></h4>
     
 
     
@@ -72,7 +72,7 @@
 
 
 <div class="description">
-    Returns true if the argument is a Number.
+    Returns the multiplication of two Numbers.
 </div>
 
 
@@ -108,13 +108,36 @@
 
         <tr>
             
-                <td class="name"><code>val</code></td>
+                <td class="name"><code>a</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">any</span>
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>b</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
 
 
             
@@ -165,7 +188,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="isNumber.js.html">isNumber.js</a>, <a href="isNumber.js.html#line5">line 5</a>
+        <a href="divide.js.html">divide.js</a>, <a href="divide.js.html#line5">line 5</a>
     </li></ul></dd>
     
 
@@ -199,7 +222,7 @@
     </dt>
     <dd>
         
-<span class="param-type">boolean</span>
+<span class="param-type">Number</span>
 
 
     </dd>
@@ -212,8 +235,9 @@
 
     <h5>Example</h5>
     
-    <pre class="prettyprint"><code>var val = 15.3;
-isNumber(val)</code></pre>
+    <pre class="prettyprint"><code>var a = 6
+var b = 2
+var result = divide(a)(b) //3</code></pre>
 
 
 
