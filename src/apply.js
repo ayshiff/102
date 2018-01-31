@@ -9,6 +9,7 @@
  * @param {function} fn
  * @param {array} args
  * @example
+ * let apply = require('102f/src/apply')
  * let arr = [0, 1, 2, 3]
  * apply(Math.max, arr) // 3
  */
