@@ -34,6 +34,7 @@ Apply a function to an argument list.
 
 **Example**:
 ```js
+let apply = require('102f/src/apply')
 let arr = [0, 1, 2, 3]
 apply(Math.max, arr) // 3
 ```
@@ -74,6 +75,7 @@ Performs right-to-left function composition.
 
 **Example**:
 ```js
+let compose = require('102f/src/compose')
 var f = function(x){ return x * x}
 var g = function(x){ return x + 2}
 let composed = compose(f,g)
@@ -113,6 +115,7 @@ Returns a curried equivalent of the provided function.
 
 **Example**:
 ```js
+let multiply = require('102f/src/multiply')
 var multiplyFunction = function(x,y) { return x * y }
 var curried = curry(f)
 curried(2)(3) //6
@@ -152,6 +155,7 @@ Returns true if the parameter is empty.
 
 **Example**:
 ```js
+let isEmpty = require('102f/src/isEmpty')
 var val = '';
 isEmpty(val) // true
 ```
@@ -190,6 +194,7 @@ Returns true if the argument is an Integer.
 
 **Example**:
 ```js
+let isInteger = require('102f/src/isInteger')
 var val = 15;
 isInteger(val) // true
 ```
@@ -228,6 +233,7 @@ Returns true if the argument is a Number.
 
 **Example**:
 ```js
+let isNumber = require('102f/src/isNumber')
 var val = 15.3;
 isNumber(val)
 ```
@@ -266,6 +272,7 @@ isNumber(val)
 
 **Example**:
 ```js
+let map = require('102f/src/map')
 var array = [0,1,2,3]
 var result = map(x => x * 2, array) //[0,2,4,6]
 ```
@@ -334,6 +341,7 @@ Returns the multiplication of two Numbers.
 
 **Example**:
 ```js
+let multiply = require('102f/src/multiply')
 var a = 2
 var b = 3
 var result = multiply(a)(b) //6
