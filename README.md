@@ -1,10 +1,13 @@
 # 102
 [![Build Status](https://travis-ci.org/ayshiff/102.svg?branch=master)](https://travis-ci.org/ayshiff/102)
 [![Coverage Status](https://coveralls.io/repos/github/ayshiff/102/badge.svg?branch=master)](https://coveralls.io/github/ayshiff/102?branch=master)
+
+* * *
+
 A modern functionnal programming library based on 101.
 (This library is still in developpment.)
 
-
+* * *
 
 
 
