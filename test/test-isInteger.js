@@ -24,4 +24,11 @@ describe('isInteger function test', () => {
         var result = isInteger(valeur)
         expect(result).to.equal(supposedResult)
     })
+
+    it('isInteger("string") should return false ', () => {
+        var valeur = "string";
+        var supposedResult = false;
+        var result = isInteger(valeur)
+        expect(result).to.equal(supposedResult)
+    })
 })

@@ -24,4 +24,11 @@ describe('isEmpty function test', () => {
         var result = isEmpty(valeur)
         expect(result).to.equal(supposedResult)
     })
+
+    it('isEmpty("") should return true ', () => {
+        var valeur = ''
+        var supposedResult = true
+        var result = isEmpty(valeur)
+        expect(result).to.equal(supposedResult)
+    })
 })

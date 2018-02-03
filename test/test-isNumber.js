@@ -24,4 +24,11 @@ describe('isNumber function test', () => {
         var result = isNumber(valeur)
         expect(result).to.equal(supposedResult)
     })
+
+    it('isNumber("string") should return false ', () => {
+        var valeur = "string";
+        var supposedResult = false;
+        var result = is(valeur)
+        expect(result).to.equal(supposedResult)
+    })
 })
