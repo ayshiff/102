@@ -10,7 +10,7 @@
  * 
  * @example
  * var multiplyFunction = function(x,y) { return x * y }
- * var curried = curry(f)
+ * var curried = curry(multiplyFunction)
  * curried(2)(3) //6
  */
 
