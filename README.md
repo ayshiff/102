@@ -9,9 +9,10 @@ A modern functionnal programming library based on 101.
 (This library is still in developpment.)
 
 * * *
-
-
-
+# Installing 102f
+```npm install 102f```   
+To add this npm package to your local machine, type the above into your command line.   
+You’ll notice a node_modules directory appear in your root where the package is now installed.
 
 
 
