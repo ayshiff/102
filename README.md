@@ -3,14 +3,13 @@
 [![Coverage Status](https://coveralls.io/repos/github/ayshiff/102/badge.svg?branch=master)](https://coveralls.io/github/ayshiff/102?branch=master)
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/ayshiff/102/blob/master/LICENSE)
 [![npm version](https://badge.fury.io/js/102f.svg)](https://badge.fury.io/js/102f)
-* * *
 
 A modern functionnal programming library based on 101.
-(This library is still in developpment.)
+(This library is still in developpment.)      
 
-* * *
-# Installing 102f
-```npm install 102f```   
+# Installation
+Run ```npm install 102f```
+
 To add this npm package to your local machine, type the above into your command line.   
 You’ll notice a node_modules directory appear in your root where the package is now installed.
 
