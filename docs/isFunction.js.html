@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: apply.js</title>
+    <title>JSDoc: Source: isFunction.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: apply.js</h1>
+    <h1 class="page-title">Source: isFunction.js</h1>
 
     
 
@@ -27,31 +27,25 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>/**
- * @module apply
+ * @module isFunction
  */
 
-/**
- * @desc Apply a function to an argument list.
- * @function apply
- * @return {any}
- * @param {function} fn
- * @param {array} args
- * @example
- * let apply = require('102f/src/apply')
- * let arr = [0, 1, 2, 3]
- * apply(Math.max, arr) // 3
- */
- 
-const curry = require('./curry.js')
+ /**
+  * @desc Returns true if the argument is a Function
+  * @function isFunction
+  * @param {function} val
+  * @return {boolean}
+  * 
+  * @example
+  * let val = (x) => x + 2
+  * isFunction(val) // true
+  */
 
-module.exports = apply = curry(function apply (fn, args){
-    return fn.apply(this, args)
-})
+  module.exports = isFunction;
 
-
- 
-
-
+  function isFunction(val) {
+      return typeof(val) === 'function'
+  }
 </code></pre>
         </article>
     </section>

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Module: curry</title>
+    <title>JSDoc: Module: isFunction</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Module: curry</h1>
+    <h1 class="page-title">Module: isFunction</h1>
 
     
 
@@ -64,7 +64,7 @@
     
 
     
-    <h4 class="name" id="~curry"><span class="type-signature">(inner) </span>curry<span class="signature">(f)</span><span class="type-signature"> &rarr; {function}</span></h4>
+    <h4 class="name" id="~isFunction"><span class="type-signature">(inner) </span>isFunction<span class="signature">(val)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
     
 
     
@@ -72,7 +72,7 @@
 
 
 <div class="description">
-    Returns a curried equivalent of the provided function.
+    Returns true if the argument is a Function
 </div>
 
 
@@ -108,7 +108,7 @@
 
         <tr>
             
-                <td class="name"><code>f</code></td>
+                <td class="name"><code>val</code></td>
             
 
             <td class="type">
@@ -165,7 +165,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="curry.js.html">curry.js</a>, <a href="curry.js.html#line5">line 5</a>
+        <a href="isFunction.js.html">isFunction.js</a>, <a href="isFunction.js.html#line5">line 5</a>
     </li></ul></dd>
     
 
@@ -199,7 +199,7 @@
     </dt>
     <dd>
         
-<span class="param-type">function</span>
+<span class="param-type">boolean</span>
 
 
     </dd>
@@ -212,9 +212,8 @@
 
     <h5>Example</h5>
     
-    <pre class="prettyprint"><code>var multiplyFunction = function(x,y) { return x * y }
-var curried = curry(multiplyFunction)
-curried(2)(3) //6</code></pre>
+    <pre class="prettyprint"><code>let val = (x) => x + 2
+isFunction(val) // true</code></pre>
 
 
 
