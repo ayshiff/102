@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Module: mapFunctor</title>
+    <title>JSDoc: Source: isFunction.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,160 +17,38 @@
 
 <div id="main">
 
-    <h1 class="page-title">Module: mapFunctor</h1>
+    <h1 class="page-title">Source: isFunction.js</h1>
 
     
 
 
 
-
-<section>
-
-<header>
     
-        
-    
-</header>
-
-<article>
-    <div class="container-overview">
-    
-        
-
-        
-    
-    </div>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <h3 class="subsection-title">Methods</h3>
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="~mapFunctor"><span class="type-signature">(inner) </span>mapFunctor<span class="signature">()</span><span class="type-signature"> &rarr; {Container}</span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    Returns a new Functor.
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="mapFunctor.js.html">mapFunctor.js</a>, <a href="mapFunctor.js.html#line5">line 5</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">Container</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-    
-
-    
-
-    
-</article>
-
-</section>
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * @module isFunction
+ */
+
+ /**
+  * @desc Returns true if the argument is a Function
+  * @function isFunction
+  * @param {function} val
+  * @return {boolean}
+  * 
+  * @example
+  * let val = (x) => x + 2
+  * isFunction(val) // true
+  */
+
+  module.exports = isFunction;
+
+  function isFunction(val) {
+      return typeof(val) === 'function'
+  }
+</code></pre>
+        </article>
+    </section>
 
 
 

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Module: mapFunctor</title>
+    <title>JSDoc: Source: not.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,160 +17,49 @@
 
 <div id="main">
 
-    <h1 class="page-title">Module: mapFunctor</h1>
+    <h1 class="page-title">Source: not.js</h1>
 
     
 
 
 
-
-<section>
-
-<header>
     
-        
-    
-</header>
-
-<article>
-    <div class="container-overview">
-    
-        
-
-        
-    
-    </div>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <h3 class="subsection-title">Methods</h3>
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="~mapFunctor"><span class="type-signature">(inner) </span>mapFunctor<span class="signature">()</span><span class="type-signature"> &rarr; {Container}</span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    Returns a new Functor.
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="mapFunctor.js.html">mapFunctor.js</a>, <a href="mapFunctor.js.html#line5">line 5</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">Container</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
-    
-
-    
-
-    
-</article>
-
-</section>
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * @module not
+ */
+
+
+/**
+ * @desc Performs right-to-left function composition.
+ * @function not
+ * @param {any} val
+ * 
+ * @return {!val}
+ * 
+ * @example 
+ * var f = function(x){ return typeof(x) === 'Number'}
+ * var g = 'Hello world !'
+ * let testNot= not(f(g) // true
+ */
+
+ let isFunction = require('./isFunction')
+ let isNumber = require('./isNumber')
+
+ module.exports = not;
+
+ function not(val) {
+     if(isFunction(val)){
+        return function(/* arguments */) {
+            return not(val.apply(this, arguments))
+        }
+     } else {
+         return !val
+     }
+ }</code></pre>
+        </article>
+    </section>
 
 
 
